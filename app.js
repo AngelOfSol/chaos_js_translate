@@ -117,7 +117,7 @@ while(matches != null) {
 	for(var i = 2; name == ""; i++) {
 		name = matches[i] || "";
 	}
-	console.log(matches);
+	//console.log(matches);
 	rules = rules.replace(new RegExp(name, 'g'), quoted.length);
 	quoted.push(name);	
 	matches = rules.match(quote_remover);
@@ -137,7 +137,7 @@ var divide_regex = /^((<.+?>|【使用】|【フレンド】|［自動］|［永
 
 for (var j in rules_list) {
 	var old = rules_list[j];
-	console.log(old);
+	//console.log(old);
 	var rule_split = divide_regex.exec(old);
 	if (rule_split != null)
 	{
@@ -146,7 +146,7 @@ for (var j in rules_list) {
 		rule_split = old;
 	}
 }
-console.log(old_rules_double);
+//console.log(old_rules_double);
 
 
 
@@ -169,7 +169,7 @@ for (var i in replace_rules) {
 	lhs = lhs.replace(/CHAR/g, char_type_regex);
 	if (temp != lhs)
 	{
-		//console.log("LOOK HERE: " + lhs);
+		////console.log("LOOK HERE: " + lhs);
 	}
 	lhs = new RegExp(lhs, 'g');
 	for(var j in rules_double) {
@@ -181,7 +181,7 @@ for (var i in replace_rules) {
 			rules_double[j][t] = rules_double[j][t].replace(lhs, rhs);
 		}
 
-		if(old[1] != rules_double[j][1]) { console.log(rules_double[j][1]); console.log(" !from! " + lhs);} 
+		if(old[1] != rules_double[j][1]) { //console.log(rules_double[j][1]); //console.log(" !from! " + lhs);} 
 	}
 }
 
