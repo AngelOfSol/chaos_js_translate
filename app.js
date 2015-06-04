@@ -11,6 +11,8 @@
 // @update       https://raw.githubusercontent.com/AngelOfSol/chaos_js_translate/master/app.js
 // ==/UserScript==
 
+/// CHECKING FOR UPDATES
+
 function th(row, col) {
 	if (col == undefined) {
 		return $(".status > tbody > tr:eq(" + row + ") > th");
