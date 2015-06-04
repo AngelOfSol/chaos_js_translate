@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Chaos TCG
 // @namespace    http://people.rit.edu/~jck5199/
-// @version      0.4.0
+// @version      0.4.1
 // @description  Renders English onto chaos cards
 // @author       Julien Kilian
 // @include      http://chaos-tcg.com/cardlist/?cardno=*
@@ -12,6 +12,7 @@
 // ==/UserScript==
 
 // CHECKING FOR UPDATES
+// GOOD STUFF
 
 function th(row, col) {
 	if (col == undefined) {
@@ -114,11 +115,11 @@ var quoted = [];
 
 var matches;
 matches = rules.match(quote_remover);
-while(matches != null) {
-	var name = "";
+while (matches !== null) {
+	var cname = "";
 	var done = false;
 	for(var i = 2; name == ""; i++) {
-		name = matches[i] || "";
+		cname = matches[i] || "";
 	}
 	//console.log(matches);
 	rules = rules.replace(new RegExp(name, 'g'), quoted.length);
@@ -185,6 +186,7 @@ for (var i in replace_rules) {
 		}
 
 		if(old[1] != rules_double[j][1]) { //console.log(rules_double[j][1]); //console.log(" !from! " + lhs);} 
+		}
 	}
 }
 
