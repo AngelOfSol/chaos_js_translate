@@ -115,20 +115,20 @@ var quoted = [];
 
 var matches;
 matches = rules.match(quote_remover);
+console.log(matches);
+
+
 while (matches !== null) {
 	var cname = "";
 	var done = false;
-	for(var i = 2; name == ""; i++) {
+	for(var i = 2; cname == ""; i++) {
 		cname = matches[i] || "";
 	}
-	//console.log(matches);
-	rules = rules.replace(new RegExp(name, 'g'), quoted.length);
-	quoted.push(name);	
+	rules = rules.replace(new RegExp(cname, 'g'), quoted.length);
+	quoted.push(cname);	
 	matches = rules.match(quote_remover);
 }
-
-
-
+console.log(rules);
 var rules_list = rules.split("<br>");
 var old_rules_double = [];
 var rules_double = [];
@@ -150,7 +150,7 @@ for (var j in rules_list) {
 		rule_split = old;
 	}
 }
-//console.log(old_rules_double);
+console.log(old_rules_double);
 
 
 
@@ -189,7 +189,6 @@ for (var i in replace_rules) {
 		}
 	}
 }
-
 for(var j in rules_double) {
 
 
@@ -201,7 +200,6 @@ for(var j in rules_double) {
 		});
 	}
 }
-
 var new_rules = [];
 for (var t in rules_double) {
 	new_rules.push(rules_double[t].join(""));

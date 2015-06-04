@@ -337,6 +337,7 @@ var replace_rules = [
 	"a ([aeiou]) => an $1",
 	"(a|your) (Partner|Friend)s? (「_」) => your $3 $2",
 	"Abilitie([^s]) => Ability$1",
+	"when your or => when you or",
 	"( ( )+) =>  ", // replaces 2 spaces in a row with just 1
 
 	" => "
