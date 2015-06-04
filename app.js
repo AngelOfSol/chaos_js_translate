@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Chaos TCG
 // @namespace    http://people.rit.edu/~jck5199/
-// @version      0.4.1
+// @version      0.4.2
 // @description  Renders English onto chaos cards
 // @author       Julien Kilian
 // @include      http://chaos-tcg.com/cardlist/?cardno=*
