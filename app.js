@@ -8,6 +8,7 @@
 // @grant        none
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @require      https://raw.githubusercontent.com/AngelOfSol/chaos_js_translate/master/rule_list.js
+// @update       https://raw.githubusercontent.com/AngelOfSol/chaos_js_translate/master/app.js
 // ==/UserScript==
 
 function th(row, col) {
