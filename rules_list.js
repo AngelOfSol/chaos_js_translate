@@ -212,6 +212,7 @@ var replace_rules = [
 	
 	"このターン中に登場したCHAR => $1 that entered this turn ",
 	"が減少する =>  reducing ",
+	"が上昇する =>  boosting ",
 	"受けている =>  recieved ",
 	"耐久力が減少する => Defense reducing ",
 	"攻撃力と耐久力両方が上昇する => Attack and Defense boosting ",
@@ -244,6 +245,7 @@ var replace_rules = [
 	"バトル => Battle ",
 	"パートナー => Partner",
 	"同OS => Same OS",
+	"同作品 => Same Work",
 	"スキル => Skill ",
 	"乱入 => Tresspass",
 	"先制攻撃 => First Attack",
@@ -337,7 +339,7 @@ var replace_rules = [
 	"a ([aeiou]) => an $1",
 	"(a|your) (Partner|Friend)s? (「_」) => your $3 $2",
 	"Abilitie([^s]) => Ability$1",
-	"when your or => when you or",
+	"your or your Opponent's (Partner) => your $1 or your Opponent's $1",
 	"( ( )+) =>  ", // replaces 2 spaces in a row with just 1
 
 	" => "
