@@ -7,7 +7,7 @@
 // @include      http://chaos-tcg.com/cardlist/?cardno=*
 // @grant        none
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
-// @require      https://raw.githubusercontent.com/AngelOfSol/chaos_js_translate/master/rules.js
+// @require      https://raw.githubusercontent.com/AngelOfSol/chaos_js_translate/master/rule_list.js
 // ==/UserScript==
 
 function th(row, col) {
